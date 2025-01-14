@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My project</title>
     <link rel="stylesheet" href="/assets/materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="/assets/css/util.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Logo</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
+    <nav class=" purple darken-4 z-depth-0">
+        <div class="nav-wrapper black-text">
+          <div class="white-text">
+          <a href="#!" class="white-text">home</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger white-text"><i class="material-icons white-text">menu</i></a>
+          <ul class="right hide-on-med-and-down black-text">
             <li><a href="sass.html">Sass</a></li>
             <li><a href="badges.html">Components</a></li>
             <li><a href="collapsible.html">Javascript</a></li>
@@ -23,10 +25,19 @@
       </nav>
     
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <li><div class="user-view">
+          <div class="background">
+            <img src="/assets/images/Screenshot_20220922-144015_One UI Home.jpg" class="w-full">
+          </div>
+          <a href="#user"><img class="circle" src="/assets/images/444584f684f61fcb7a981af0eb1a1e2d.jpg"></a>
+          <a href="#name"><span class="white-text name">Fatemeh Pouyamehr</span></a>
+          <a href="#email"><span class="white-text email">fatemeh.p.mehr@gmail.com</span></a>
+        </div></li>
+        <li><a href="#!"><i class="material-icons">attach_file</i>AQ Fast Learn</a></li>
+        <li><a href="#!"><i class="material-icons">cloud_done</i> Link</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Subheader</a></li>
+        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
       </ul>
  
     
